@@ -9,9 +9,9 @@ public class Ejemplo1{
         do {
             try {
                 repetir = false;
-                System.out.print("Introduce un número entero > 0 y <" + array.length + " " );
+                System.out.print("Introduce un número entero > 0 y < " + array.length + ":" );
                 n = sc.nextInt();
-                System.out.println("Valor en la posición " + n + ":" + array[n]);
+                System.out.println("Valor en la posición " + n + ": " + array[n]);
             } 
             catch (InputMismatchException e) {
                 sc.nextLine();
@@ -20,7 +20,7 @@ public class Ejemplo1{
                 repetir = true;
             } 
             catch (IndexOutOfBoundsException e){
-                System.out.println("Debe introducir un número enetero > 0 y < " + array.length + " ");
+                System.out.println("Debe introducir un número entero > 0 y < " + array.length + " ");
                 repetir = true;
             }
            
