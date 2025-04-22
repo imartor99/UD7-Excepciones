@@ -1,6 +1,7 @@
 public class Ejercicio1 {
     public static void main(String[] args) {
         String[] array_string = new String[25];
+        //Tras analizar código, controlo la excepción.
         try {
             System.out.println(array_string[3].length());
         } catch (NullPointerException e) {
