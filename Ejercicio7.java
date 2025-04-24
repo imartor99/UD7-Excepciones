@@ -13,7 +13,13 @@ public class Ejercicio7 {
 
     public static void main(String[] args) {
         double[] v = new double[15];
-        System.out.println(accesoPorIndice(v, 16));
+        
+
+        try {
+            System.out.println(accesoPorIndice(v, 16));
+        } catch (RuntimeException e) {
+            System.out.println("Error!!!! " + e.getMessage());
+        }
     }
 
 }
