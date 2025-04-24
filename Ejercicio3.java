@@ -8,14 +8,21 @@ public class Ejercicio3 {
     // correspondiente (puedes hacer uso del método “charAt(int)” de la clase
     // “String”).
     // En caso contrario, construye y lanza una excepción de tipo Exception.
+
     public static char caracterEn(String cadena, int posicion) throws Exception {
         if (posicion >= 0 && posicion < cadena.length()) {
             return cadena.charAt(posicion);
         } else {
             throw new Exception("La posición está fuera del rango válido de la cadena.");
         }
+    }
 
     public static void main(String[] args) {
-
+        try {
+            System.out.println(caracterEn("Hola mundo", 5)); // Debería imprimir 'm'
+            System.out.println(caracterEn("Hola", 10)); // Lanza una excepción
+        } catch (Exception e) {
+            System.out.println("Error: " + e.getMessage());
+        }
     }
 }
