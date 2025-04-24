@@ -25,5 +25,5 @@ public class Ejercicio10 {
         valor = valor + 1;
         System.out.println("Valor antes del return: " + valor);
         return valor;
-    }//
+    }
 }
